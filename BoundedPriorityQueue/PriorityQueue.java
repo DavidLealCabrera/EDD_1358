@@ -1,0 +1,83 @@
+package com.mycompany.priorityqueue;
+
+public class PriorityQueue {
+
+    public static void main(String[] args) {
+        BoundedPriorityQueue<Integer> a= new BoundedPriorityQueue(1);
+        BoundedPriorityQueue<Integer> b= new BoundedPriorityQueue(2);
+        BoundedPriorityQueue<Integer> c= new BoundedPriorityQueue(3);
+        BoundedPriorityQueue<Integer> d= new BoundedPriorityQueue(4);
+        BoundedPriorityQueue<Integer> e= new BoundedPriorityQueue(5);
+        d.enqueue(4, "Maestro");
+        a.transversal();
+        b.transversal();
+        c.transversal();
+        d.transversal();
+        e.transversal();
+        System.out.println("--------------------------------");
+      
+        b.enqueue(2, "Niños");
+        a.transversal();
+        b.transversal();
+        c.transversal();
+        d.transversal();
+        e.transversal();
+        System.out.println("--------------------------------");        
+        d.enqueue(4,"Mecanico");
+        a.transversal();
+        b.transversal();
+        c.transversal();
+        d.transversal();
+        e.transversal();
+        System.out.println("--------------------------------");  
+        c.enqueue(3,"Mujeres");
+        a.transversal();
+        b.transversal();
+        c.transversal();
+        d.transversal();
+        e.transversal();
+        System.out.println("--------------------------------"); 
+        b.enqueue(2,"3ra edad");
+        a.transversal();
+        b.transversal();
+        c.transversal();
+        d.transversal();
+        e.transversal();
+        System.out.println("--------------------------------"); 
+        a.enqueue(1,"Niñas");
+        a.transversal();
+        b.transversal();
+        c.transversal();
+        d.transversal();
+        e.transversal();
+        System.out.println("--------------------------------"); 
+        c.enqueue(3,"Hombres");
+        a.transversal();
+        b.transversal();
+        c.transversal();
+        d.transversal();
+        e.transversal();
+        System.out.println("--------------------------------"); 
+        d.enqueue(4,"Vigia");
+        a.transversal();
+        b.transversal();
+        c.transversal();
+        d.transversal();
+        e.transversal();
+        System.out.println("--------------------------------"); 
+        e.enqueue(5,"Capitan");
+        a.transversal();
+        b.transversal();
+        c.transversal();
+        d.transversal();
+        e.transversal();
+        System.out.println("--------------------------------"); 
+        d.enqueue(4,"Timonel");
+        a.transversal();
+        b.transversal();
+        c.transversal();
+        d.transversal();
+        e.transversal();
+        System.out.println("--------------------------------"); 
+    }
+}
